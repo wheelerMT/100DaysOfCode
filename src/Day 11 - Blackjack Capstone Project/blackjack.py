@@ -60,6 +60,11 @@ def determine_winner(player_cards, computer_cards):
         print("You won with the hand: {}".format(player_cards))
         print("The computer had {}".format(computer_cards))
         print("=============================================")
+    elif player_sum <= 21 and computer_sum > 21:
+        print("You win!")
+        print("You won with the hand: {}".format(player_cards))
+        print("The computer had {}".format(computer_cards))
+        print("=============================================")
     elif player_sum == computer_sum:
         print("Draw!")
         print("The computer had {}".format(computer_cards))
